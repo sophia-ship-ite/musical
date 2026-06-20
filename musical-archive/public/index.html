@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="프리미엄 뮤지컬 아카이브. 뮤지컬 정보 탐색 및 상세한 관람 후기를 나누는 공간입니다.">
+  <title>Musical Archive - 뮤지컬 아카이브</title>
+  
+  <!-- Google Fonts: Playfair Display for headings, Noto Sans KR for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Application JS -->
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div id="root">
+    <!-- Header Navigation -->
+    <header class="app-header">
+      <div class="header-container">
+        <a href="#/" class="logo-link">
+          <span class="logo-text-gold">MUSICAL</span>
+          <span class="logo-text-sub">ARCHIVE</span>
+        </a>
+        <div class="header-tagline">Premium Theater Archive</div>
+      </div>
+    </header>
+
+    <!-- Dynamic Content Area -->
+    <main id="app" class="app-main">
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <p>아카이브를 불러오는 중입니다...</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-container">
+        <p>&copy; 2026 Musical Archive. All rights reserved. Built using Vanilla HTML/CSS/JS.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Notification Wrapper -->
+  <div id="toast-container" class="toast-container"></div>
+</body>
+</html>
