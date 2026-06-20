@@ -4,7 +4,7 @@ const path = require('path');
 const url = require('url');
 const crypto = require('crypto');
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 const DB_PATH = path.join(__dirname, 'db.json');
 const PUBLIC_DIR = path.join(__dirname, 'public');
 
@@ -466,7 +466,7 @@ fs.access(DB_PATH, fs.constants.F_OK, (err) => {
 });
 
 function startServer() {
-  server.listen(PORT, '0.0.0.0', () => {
-    console.log(`Musical Archive Server running on port ${PORT}`);
+  server.listen(PORT, () => {
+    console.log(`Musical Archive Server running at http://localhost:${PORT}`);
   });
 }
